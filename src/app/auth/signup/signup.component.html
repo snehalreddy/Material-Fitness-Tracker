@@ -2,6 +2,7 @@
   <form
     fxLayout="column"
     fxLayoutAlign="center center"
+    fxLayoutGap="10px"
     (ngSubmit)="onSubmit(f)"
     #f="ngForm"
   >
@@ -58,7 +59,14 @@
 
     <!-- <div class=""> -->
     <!-- <button mat-stroked-button color="warn">Cancel</button> -->
-    <button type="submit" mat-raised-button color="primary">Submit</button>
+    <button
+      type="submit"
+      mat-raised-button
+      color="primary"
+      [disabled]="f.invalid"
+    >
+      Submit
+    </button>
     <!-- </div> -->
   </form>
 </section>
