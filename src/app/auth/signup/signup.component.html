@@ -44,10 +44,17 @@
         placeholder="Choose a date"
         [max]="maxDate"
         [matDatepicker]="picker"
+        ngModel
+        name="datePicked"
+        required
       />
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
+
+    <mat-checkbox ngModel name="agree" required>
+      Agree to terms and conditions.
+    </mat-checkbox>
 
     <!-- <div class=""> -->
     <!-- <button mat-stroked-button color="warn">Cancel</button> -->
