@@ -1,0 +1,33 @@
+/* #container {
+  display: flex;
+  width: 100%;
+  height: 900px;
+  border: 1px black solid;
+  flex-direction: column;
+
+  main-axis alignment
+  justify-content: center;
+
+  cross-axis alignment
+  align-items: center;
+}
+
+.child {
+  width: 300px;
+  height: 200px;
+  background-color: aquamarine;
+  margin: 1rem;
+  flex: 1;
+} */
+
+.signup-form {
+  height: 900px;
+}
+
+mat-form-field {
+  width: 350px;
+}
+
+/* button {
+  margin-right: 1rem;
+} */
