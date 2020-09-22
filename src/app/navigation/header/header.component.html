@@ -1,0 +1,24 @@
+<mat-nav-list (click)="sidenavRef.toggle()">
+  <a mat-list-item routerLink="/">
+    <mat-icon class="nav-caption">home</mat-icon>
+    <span>Home</span>
+  </a>
+  <a mat-list-item routerLink="/signup">
+    <mat-icon class="nav-caption">face</mat-icon>
+    <span>Sign Up</span>
+  </a>
+  <a mat-list-item routerLink="/login">
+    <mat-icon class="nav-caption">input</mat-icon>
+    <span>Login</span>
+  </a>
+  <a mat-list-item routerLink="/training">
+    <mat-icon class="nav-caption">fitness_center</mat-icon>
+    <span>Training</span>
+  </a>
+  <mat-list-item>
+    <button mat-icon-button>
+      <mat-icon class="nav-caption">eject</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-list-item>
+</mat-nav-list>
