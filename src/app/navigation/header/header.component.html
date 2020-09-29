@@ -1,24 +1,19 @@
-<mat-nav-list (click)="sidenavRef.toggle()">
-  <a mat-list-item routerLink="/">
-    <mat-icon class="nav-caption">home</mat-icon>
-    <span>Home</span>
-  </a>
-  <a mat-list-item routerLink="/signup">
-    <mat-icon class="nav-caption">face</mat-icon>
-    <span>Sign Up</span>
-  </a>
-  <a mat-list-item routerLink="/login">
-    <mat-icon class="nav-caption">input</mat-icon>
-    <span>Login</span>
-  </a>
-  <a mat-list-item routerLink="/training">
-    <mat-icon class="nav-caption">fitness_center</mat-icon>
-    <span>Training</span>
-  </a>
-  <mat-list-item>
-    <button mat-icon-button>
-      <mat-icon class="nav-caption">eject</mat-icon>
-      <span>Logout</span>
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="sidenavRef.toggle()">
+      <mat-icon>menu</mat-icon>
     </button>
-  </mat-list-item>
-</mat-nav-list>
+  </div>
+  <div>
+    <a class="logo" routerLink="/">LOGO</a>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+    <ul fxLayout fxLayoutGap="12px" class="navigation-items">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/signup">Signup</a></li>
+      <li><a routerLink="/login">Login</a></li>
+      <li><a routerLink="/training">Training</a></li>
+      <li><a>Logout</a></li>
+    </ul>
+  </div>
+</mat-toolbar>

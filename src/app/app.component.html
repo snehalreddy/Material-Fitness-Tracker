@@ -1,9 +1,9 @@
 <mat-sidenav-container>
   <mat-sidenav mode="side" #sidenav role="navigation">
-    <app-header [sidenavRef]="sidenav"></app-header>
+    <app-sidenav-list [sidenavRef]="sidenav"></app-sidenav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <app-sidenav-list [sidenavRef]="sidenav"></app-sidenav-list>
+    <app-header [sidenavRef]="sidenav"></app-header>
     <main>
       <router-outlet></router-outlet>
     </main>
